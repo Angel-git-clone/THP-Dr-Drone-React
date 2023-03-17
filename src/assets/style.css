@@ -1,0 +1,22 @@
+footer {
+  background-color: #23074f;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+}
+
+.footerlinks {
+  padding: 10px;
+}
+
+.LogoDrDrone{
+  width: 250px;
+  height: 250px;
+}
+body{
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+  left: 0;
+  height: 3em;
+}
