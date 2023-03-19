@@ -1,0 +1,11 @@
+footer {
+  background-color: #23074f;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  padding: 1vh;
+}
+
+.footerlinks {
+  padding: 10px;
+}

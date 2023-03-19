@@ -1,22 +1,28 @@
-footer {
-  background-color: #23074f;
-  position: absolute;
-  bottom: 0;
-  width: 100vw;
-}
+/* Body */
 
-.footerlinks {
-  padding: 10px;
-}
-
-.LogoDrDrone{
-  width: 250px;
-  height: 250px;
-}
 body{
   margin: 0;
   padding: 0;
   bottom: 0;
   left: 0;
-  height: 3em;
+}
+.Container{
+  margin: 5vh;
+  padding: 5vw;
+  display: flex;
+  justify-content: center;
+}
+
+.forms{
+  background-color: deepskyblue; /* <= juste pour voir où ça se situe  */
+}
+
+/* LOGO */
+
+.LogoDrDrone{
+  width: 250px;
+  height: 250px;
+}
+.nav:hover{
+  background-color: green ;
 }

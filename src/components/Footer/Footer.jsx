@@ -2,6 +2,7 @@ import React from 'react'; //rfc créer nouveau dossier avec les import et expor
 import { Link } from 'react-router-dom';
 import LogoDrdrone from '../../assets/logotype-1024x1016.png';
 import Home from '../../pages/Homepage';
+import './Footer.css';
 
 function Footer() {
   return (

@@ -9,6 +9,7 @@ import Posts from './pages/posts';
 import Home from './pages/Homepage';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
+import Authenform from './components/AuthForm/AuthenForm';
 
 const API_URL = 'http://localhost:3000/api/posts';
 
@@ -31,10 +32,19 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Home />
-      <Header />
-      <div className="App">
-        <Posts posts={posts} />
+      <div className='Container'>
+        <div className='header'>
+          <Home />
+        </div>
+        <div className='forms'>
+          <Authenform />
+        </div>
+        <div className='nav'>
+          <Header />
+        </div>
+        <div className="App">
+          <Posts posts={posts} />
+        </div>
       </div>
       <Footer />
     </BrowserRouter>
