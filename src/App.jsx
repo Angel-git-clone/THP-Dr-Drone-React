@@ -32,21 +32,11 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className='Container'>
-        <div className='header'>
-          <Home />
-        </div>
-        <div className='forms'>
-          <Authenform />
-        </div>
-        <div className='nav'>
-          <Header />
-        </div>
-        <div className="App">
-          <Posts posts={posts} />
-        </div>
-      </div>
-      <Footer />
+      <Home />
+      <Authenform />
+      <Header />
+      <Posts posts={posts} />
+      <Footer className="Footer" />
     </BrowserRouter>
   );
 }
