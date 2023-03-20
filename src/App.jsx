@@ -36,7 +36,7 @@ function App() {
       <Authenform />
       <Header />
       <Posts posts={posts} />
-      <Footer className="Footer" />
+      <Footer />
     </BrowserRouter>
   );
 }
