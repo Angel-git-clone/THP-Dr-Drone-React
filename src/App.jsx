@@ -6,6 +6,7 @@ import Axios from 'axios';
 import { BrowserRouter } from 'react-router-dom';
 
 import Posts from './pages/posts';
+import Navbar from './components/Navbar/Navbar';
 import Home from './pages/Homepage';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
@@ -32,6 +33,7 @@ function App() {
 
   return (
     <BrowserRouter>
+      <Navbar />
       <Home />
       <Authenform />
       {/* <Header /> */}
