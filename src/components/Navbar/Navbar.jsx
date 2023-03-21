@@ -13,6 +13,10 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import background from '../../assets/background-drdrone.jpeg';
+import LogoDrdrone from '../../assets/logotype-1024x1016.png';
+import { Link } from 'react-router-dom';
+import Home from '../../pages/Homepage';
+import '../Navbar/Navbar.css';
 
 const pages = ['Nos formations', 'Nous contacter'];
 const settings = ['Mon Profil', 'Dashboard', 'Se déconnecter'];
@@ -44,7 +48,9 @@ function ResponsiveAppBar() {
       position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          <Link to={Home}>
+            <img src={LogoDrdrone} alt="logo enseigne" className="LogoNavbar"/>
+          </Link>
           <Typography
             variant="h6"
             noWrap
