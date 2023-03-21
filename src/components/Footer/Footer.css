@@ -8,15 +8,12 @@ footer {
   flex-wrap: wrap;
 }
 
-.footerlinks {
-  padding: 10px;
-}
-
 /* Grid Text Footer */
 .TextFooterLink{
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 }
 
 .GridTextFooter1{
@@ -47,17 +44,11 @@ footer {
   grid-gap: 10px;
   grid-auto-rows: minmax(100px, auto);
 }
-.wrapper1 {
-  display: grid;
-  grid-gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
-  z-index: 1;
-}
 
 
 .FooterOnFooter{
   grid-column: 1/4;
-  grid-row: 4;
+  grid-row: 3;
 }
 
 .Copyright{
@@ -82,15 +73,11 @@ footer {
   justify-content: flex-end;
 
 
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
 }
 
 .LogoGrid{
   grid-column: 3;
-  grid-row: 3;
-}
-
-.nav:hover{
-  background-color: green ;
+  grid-row: 2;
 }

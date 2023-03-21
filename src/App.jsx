@@ -34,9 +34,9 @@ function App() {
     <BrowserRouter>
       <Home />
       <Authenform />
-      <Header />
-      <Posts posts={posts} />
-      <Footer className="Footer" />
+      {/* <Header /> */}
+      {/* <Posts posts={posts} /> */}
+      <Footer />
     </BrowserRouter>
   );
 }
