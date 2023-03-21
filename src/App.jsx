@@ -9,8 +9,6 @@ import Posts from './pages/posts';
 import Navbar from './components/Navbar/Navbar';
 import Home from './pages/Homepage';
 import Footer from './components/Footer/Footer';
-import Header from './components/Header/Header';
-import Authenform from './components/AuthForm/AuthenForm';
 
 const API_URL = 'http://localhost:3000/api/posts';
 
@@ -35,7 +33,7 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <Home />
-      <Authenform />
+      {/* <Authenform /> */}
       {/* <Header /> */}
       {/* <Posts posts={posts} /> */}
       <Footer />

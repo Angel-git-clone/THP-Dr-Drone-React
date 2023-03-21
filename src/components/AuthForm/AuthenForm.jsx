@@ -23,6 +23,8 @@ import LogoDrdrone from '../../assets/logotype-1024x1016.png';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import '../AuthForm/AuthenForm.css';
+import Home from '../../pages/Homepage';
 
 // function Copyright(props) {
 //   return (
@@ -61,11 +63,12 @@ export default function SignUp() {
             alignItems: 'center',
           }}
         >
-          <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
+          {/* <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
             <LockOutlinedIcon />
-          </Avatar>
+          </Avatar> */}
+          <img src={LogoDrdrone} alt="logo enseigne" className="LogoFormDrDrone" />
           <Typography component="h1" variant="h5">
-            Sign up
+            Connexion
           </Typography>
           <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }}>
             <Grid container spacing={2}>
