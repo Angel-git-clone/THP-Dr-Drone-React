@@ -1,15 +1,7 @@
-/* .wrapper1{
-  display: grid;
-  /* grid-template-columns: repeat(3, 1fr); */
-  /* grid-gap: 10px; */
-  /* grid-auto-rows: minmax(100px, auto); */
-/* } */
-
-.LeftContainer{
-  /* grid-column: 1;
-  grid-row: 1; */
-}
-.RightContainer{
-  grid-column: 2;
-  grid-row: 1;
+.TextLeft{
+  display: flex;
+  text-align: start;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-content: center; 
 }

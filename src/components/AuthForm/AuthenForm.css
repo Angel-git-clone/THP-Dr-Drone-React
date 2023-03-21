@@ -2,3 +2,6 @@
   width: 200px;
   height: 200px;
 }
+.ThemeProvider{
+  filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.25));
+}
