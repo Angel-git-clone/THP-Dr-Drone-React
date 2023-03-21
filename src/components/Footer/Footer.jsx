@@ -7,9 +7,8 @@ import './Footer.css';
 function Footer() {
   return (
     <footer className="wrapper">
-      <div className="TextFooterLink wrapper1">
         <a
-          className="footerlinks GridTextFooter1" // pour rappeler les classes de style.css
+          className="TextFooterLink GridTextFooter1" // pour rappeler les classes de style.css
           href="https://drdrone.fr/#services"
           rel="noreferrer"
           target="_blank" // permet quand clique sur le lien, d'ouvrir une nouvelle page !
@@ -17,7 +16,7 @@ function Footer() {
           Nos prestations
         </a>
         <a
-          className="footerlinks GridTextFooter2"
+          className="TextFooterLink GridTextFooter2"
           href="https://drdrone.fr/qui-sommes-nous/"
           rel="noreferrer"
           target="_blank"
@@ -25,7 +24,7 @@ function Footer() {
           Qui sommes nous ?
         </a>
         <a
-          className="footerlinks GridTextFooter3"
+          className="TextFooterLink GridTextFooter3"
           href="https://drdrone.fr/demande-de-devis/"
           rel="noreferrer"
           target="_blank"
@@ -33,7 +32,7 @@ function Footer() {
           Demande de devis
         </a>
         <a
-          className="footerlinks GridTextFooter4"
+          className="TextFooterLink GridTextFooter4"
           href="https://drdrone.fr/contact/"
           rel="noreferrer"
           target="_blank"
@@ -41,14 +40,13 @@ function Footer() {
           Contact
         </a>
         <a
-          className="footerlinks GridTextFooter5"
+          className="TextFooterLink GridTextFooter5"
           href="https://drdrone.fr/mentions-legales/"
           rel="noreferrer"
           target="_blank"
         >
           Mentions légales
         </a>
-      </div>
       <Link to={Home} className="Logofooter LogoGrid">
         <img src={LogoDrdrone} alt="logo enseigne" />
       </Link>
