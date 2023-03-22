@@ -11,7 +11,7 @@ import Home from './pages/Homepage';
 import Footer from './components/Footer/Footer';
 import BackgroundImage from './assets/Background.png';
 
-const API_URL = 'http://localhost:3000/api/posts';
+const API_URL = 'https://backend-drdrone.herokuapp.com/api/posts';
 
 function getAPIData() {
   return Axios.get(API_URL).then((response) => response.data);
