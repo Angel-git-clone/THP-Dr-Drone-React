@@ -9,6 +9,7 @@ import Posts from './pages/posts';
 import Navbar from './components/Navbar/Navbar';
 import Home from './pages/Homepage';
 import Footer from './components/Footer/Footer';
+import BackgroundImage from './assets/Background.png';
 
 const API_URL = 'http://localhost:3000/api/posts';
 
@@ -31,12 +32,14 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Navbar />
-      <Home />
+      {/* <div style={{ backgroundImage:`url(${BackgroundImage})`, backgroundSize: 'contain',backgroundRepeat: 'no-repeat'}}> */}
+        <Navbar />
+        <Home />
+        <Footer />
+      {/* </div> */}
       {/* <Authenform /> */}
       {/* <Header /> */}
       {/* <Posts posts={posts} /> */}
-      <Footer />
     </BrowserRouter>
   );
 }
