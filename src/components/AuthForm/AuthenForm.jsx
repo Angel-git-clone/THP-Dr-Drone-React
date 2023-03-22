@@ -18,12 +18,14 @@ import Checkbox from '@mui/material/Checkbox';
 import Link from '@mui/material/Link';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
+// import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import LogoDrdrone from '../../assets/logotype-1024x1016.png';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import '../AuthForm/AuthenForm.css';
+import { BorderColor } from '@mui/icons-material';
+import { BorderColorOutlined } from '@mui/icons-material';
 
 // function Copyright(props) {
 //   return (
@@ -44,6 +46,8 @@ export default function SignUp() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
+    // axios.post(Api_url, dataToSend).then(response.data)
+    // localStorage.setItem('Authorization_token', reponses.headers.token)
     console.log({
       email: data.get('email'),
       password: data.get('password'),
@@ -51,7 +55,7 @@ export default function SignUp() {
   };
 
   return (
-    <ThemeProvider theme={theme} >
+    <ThemeProvider theme={theme}>
         <Container component="main" maxWidth="xs" className="ThemeProvider">      
           <CssBaseline />
           <Box
@@ -60,6 +64,7 @@ export default function SignUp() {
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
+              color: 'white',
             }}
           >
             {/* <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
@@ -70,7 +75,7 @@ export default function SignUp() {
                   Connexion
                 </Typography>
             <div className='ContainBlur'>
-                <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }}>
+                <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3}}>
                   <Grid container spacing={2}>
                     <Grid item xs={12} sm={6}>
                       <TextField
@@ -116,7 +121,7 @@ export default function SignUp() {
                     </Grid>
                     <Grid item xs={12}>
                       <FormControlLabel
-                        control={<Checkbox value="allowExtraEmails" color="primary" />}
+                        control={<Checkbox value="allowExtraEmails" color="secondary" />}
                         label="I want to receive inspiration, marketing promotions and updates via email."
                       />
                     </Grid>
@@ -125,17 +130,18 @@ export default function SignUp() {
                     type="submit"
                     fullWidth
                     variant="contained"
-                    sx={{ mt: 3, mb: 2 }}
+                    sx={{ mt: 3, mb: 3 }}
+                    color="secondary"
                   >
                     Sign Up
                   </Button>
-                  <Grid container justifyContent="flex-end">
+                  {/* <Grid container justifyContent="flex-end">
                     <Grid item>
                       <Link href="#" variant="body2">
                         Already have an account? Sign in
                       </Link>
                     </Grid>
-                  </Grid>
+                  </Grid> */}
                 </Box>
               {/* <Copyright sx={{ mt: 5 }} /> */}
             </div>

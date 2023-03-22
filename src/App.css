@@ -44,45 +44,75 @@
 
 
 /* JB & Belen */
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
+@media screen and (min-width: 1024px) and (max-width: 1480px) {
+  .App {
+    text-align: center;
+  }
+  
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    height: 40vmin;
+    pointer-events: none;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
   }
-  to {
-    transform: rotate(360deg);
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
   }
-}
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  *{
+    font-family: 'Panchang Variable';
+    max-width: 180vh;
+    max-height: 80vw;
+    z-index: 1000;
+    /* background-color: aquamarine; */
+  
+  }
+  body{
+    background-image: url('./assets/Background.png');
+    background-size: 180vh 55vw;
+  }
+ }
 
-*{
-  font-family: 'Panchang Variable';
-}
+ @media screen (min-width: 1481px) and (max-width: 2560px) {
+  body{
+    background-image: url('./assets/BackgroundMoyenPetit.png');
+    background-size: 200vh 45vw ;
+  }
+
+  /* *{
+    background-color: blanchedalmond;
+  } */
+ }
+
+ @media screen and (max-width: 1024px) {
+  body{
+    background-image: url('./assets/BackgroundMoyenPetit.png');
+    background-size: 'contain';
+  }
+ }
+ 
