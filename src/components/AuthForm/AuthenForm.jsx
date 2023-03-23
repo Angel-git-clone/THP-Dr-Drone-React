@@ -77,33 +77,13 @@ export default function SignUp() {
             <div className='ContainBlur'>
                 <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3}}>
                   <Grid container spacing={2}>
-                    <Grid item xs={12} sm={6}>
-                      <TextField
-                        autoComplete="given-name"
-                        name="firstName"
-                        required
-                        fullWidth
-                        id="firstName"
-                        label="First Name"
-                        autoFocus
-                      />
-                    </Grid>
-                    <Grid item xs={12} sm={6}>
-                      <TextField
-                        required
-                        fullWidth
-                        id="lastName"
-                        label="Last Name"
-                        name="lastName"
-                        autoComplete="family-name"
-                      />
-                    </Grid>
+                    
                     <Grid item xs={12}>
                       <TextField
                         required
                         fullWidth
                         id="email"
-                        label="Email Address"
+                        label="Votre email"
                         name="email"
                         autoComplete="email"
                       />
@@ -113,7 +93,7 @@ export default function SignUp() {
                         required
                         fullWidth
                         name="password"
-                        label="Password"
+                        label="Votre mot de passe"
                         type="password"
                         id="password"
                         autoComplete="new-password"
@@ -122,7 +102,7 @@ export default function SignUp() {
                     <Grid item xs={12}>
                       <FormControlLabel
                         control={<Checkbox value="allowExtraEmails" color="secondary" />}
-                        label="I want to receive inspiration, marketing promotions and updates via email."
+                        label="J'autorise Dr Drone à stocker mon adresse email."
                       />
                     </Grid>
                   </Grid>
@@ -133,7 +113,7 @@ export default function SignUp() {
                     sx={{ mt: 3, mb: 3 }}
                     color="secondary"
                   >
-                    Sign Up
+                    Connexion
                   </Button>
                   {/* <Grid container justifyContent="flex-end">
                     <Grid item>
