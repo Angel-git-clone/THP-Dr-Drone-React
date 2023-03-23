@@ -10,6 +10,7 @@ import Navbar from './components/Navbar/Navbar';
 import Home from './pages/Homepage';
 import Footer from './components/Footer/Footer';
 import BackgroundImage from './assets/Background.png';
+// import Formations from './pages/Formations';
 
 const API_URL = 'https://backend-drdrone.herokuapp.com/api/posts';
 
@@ -36,6 +37,7 @@ function App() {
         <Navbar />
         <Home />
         <Footer />
+        {/* <Formations />  */}
       {/* </div> */}
       {/* <Authenform /> */}
       {/* <Header /> */}
