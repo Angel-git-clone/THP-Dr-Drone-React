@@ -3,14 +3,15 @@ import './assets/style.css';
 import { useEffect, useState } from 'react';
 
 import Axios from 'axios';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import Posts from './pages/posts';
+// import Posts from './pages/posts';
 import Navbar from './components/Navbar/Navbar';
-import Home from './pages/Homepage';
+import Home from './pages/Homepage/Homepage';
 import Footer from './components/Footer/Footer';
-import BackgroundImage from './assets/Background.png';
-// import Formations from './pages/Formations';
+import Formations from './pages/Formations/Formations';
+import Contact from './pages/Contact';
+// import Formationpage from './pages/Formationpage';
 
 const API_URL = 'https://backend-drdrone.herokuapp.com/api/posts';
 
@@ -33,14 +34,15 @@ function App() {
 
   return (
     <BrowserRouter>
-      {/* <div style={{ backgroundImage:`url(${BackgroundImage})`, backgroundSize: 'contain',backgroundRepeat: 'no-repeat'}}> */}
         <Navbar />
-        <Home />
+        <Routes>
+          <Route path='/' element={<Home />} /> 
+          <Route path='/formations' element={<Formations />}/>
+          {/* <Route path='/formation/:id' element={<Formationpage />}/> */}
+          <Route path='/contact' element={<Contact />}/>
+          <Route path='*' element={<Error />}/>
+        </Routes>
         <Footer />
-        {/* <Formations />  */}
-      {/* </div> */}
-      {/* <Authenform /> */}
-      {/* <Header /> */}
       {/* <Posts posts={posts} /> */}
     </BrowserRouter>
   );

@@ -1,4 +1,5 @@
 import * as React from 'react';
+// Mui
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -12,12 +13,16 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+// Import ++ 
 import background from '../../assets/background-drdrone.jpeg';
 import LogoDrdrone from '../../assets/logotype-1024x1016.png';
+import './Navbar.css';
+// React Router Dom
 import { Link } from 'react-router-dom';
-import Home from '../../pages/Homepage';
-import '../Navbar/Navbar.css';
-// import Formations from '../../pages/Formations';
+// Pages
+import Home from '../../pages/Homepage/Homepage';
+import Formations from '../../pages/Formations/Formations';
+import Contact from '../../pages/Contact';
 
 const pages = ['Nos formations', 'Nous contacter'];
 const settings = ['Mon Profil', 'Dashboard', 'Se déconnecter'];
@@ -106,10 +111,10 @@ function ResponsiveAppBar() {
               ))} */}
             {/* </Menu> */}
           </Box>
-          <Link to='/formations'>
+          <Link to='/Formations' src={Formations}>
             <p style={{color: 'white', marginRight: 10, marginBottom: 11}}>Nos formations</p>
           </Link>
-          <Link to='/contact'>
+          <Link to='/contact' src={Contact}>
             <p style={{color: 'white', marginRight: 10, marginBottom: 11}}>Nous contacter</p>
           </Link>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
@@ -127,7 +132,7 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                {/* <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" /> */}
               </IconButton>
             </Tooltip>
             <Menu

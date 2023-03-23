@@ -1,8 +1,7 @@
 import React from 'react';
 import Grid from '@mui/system/Unstable_Grid';
-import AuthenForm from '../components/AuthForm/AuthenForm';
-import '../pages/Homepage.css';
-
+import AuthenForm from '../../components/AuthForm/AuthenForm';
+import './Homepage.css';
 
 export default function homepage() {
   return (
