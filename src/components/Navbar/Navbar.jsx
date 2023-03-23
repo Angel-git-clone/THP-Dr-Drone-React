@@ -17,6 +17,7 @@ import LogoDrdrone from '../../assets/logotype-1024x1016.png';
 import { Link } from 'react-router-dom';
 import Home from '../../pages/Homepage';
 import '../Navbar/Navbar.css';
+// import Formations from '../../pages/Formations';
 
 const pages = ['Nos formations', 'Nous contacter'];
 const settings = ['Mon Profil', 'Dashboard', 'Se déconnecter'];
@@ -70,7 +71,7 @@ function ResponsiveAppBar() {
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-            <IconButton
+            {/* <IconButton
               size="large"
               aria-label="account of current user"
               aria-controls="menu-appbar"
@@ -97,43 +98,30 @@ function ResponsiveAppBar() {
               sx={{
                 display: { xs: 'block', md: 'none' },
               }}
-            >
-              {pages.map((page) => (
+            > */}
+              {/* {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
-              ))}
-            </Menu>
+              ))} */}
+            {/* </Menu> */}
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href=""
-            sx={{
-              mr: 2,
-              display: { xs: 'flex', md: 'none' },
-              flexGrow: 1,
-              fontFamily: 'Roboto',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            LOGO
-          </Typography>
+          <Link to='/formations'>
+            <p style={{color: 'white', marginRight: 10, marginBottom: 11}}>Nos formations</p>
+          </Link>
+          <Link to='/contact'>
+            <p style={{color: 'white', marginRight: 10, marginBottom: 11}}>Nous contacter</p>
+          </Link>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
+            {/* {pages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{ my: 3, color: 'white', display: 'block' }}
               >
                 {page}
               </Button>
-            ))}
+            ))} */}
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
