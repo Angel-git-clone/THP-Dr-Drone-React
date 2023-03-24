@@ -12,7 +12,3 @@ body{
   display: flex;
   justify-content: center;
 }
-
-.forms{
-  background-color: deepskyblue; /* <= juste pour voir où ça se situe  */
-}
