@@ -47,10 +47,11 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar 
-    sx={{
-        backgroundImage: `url(${background})`
-    }}
+    <AppBar
+      className='Navbar'
+      sx={{
+        backgroundImage: `url(${background})`,
+      }}
       position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>

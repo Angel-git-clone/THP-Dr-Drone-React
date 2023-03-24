@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function Contact() {
-  return(
+  return (
     <div>Hello</div>
   );
 }
