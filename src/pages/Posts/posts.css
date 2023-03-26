@@ -1,0 +1,6 @@
+.background{
+  /* border: 2px solid white; */
+  border-radius: 25px;
+  background-color:rgba(71, 61, 138, 0.494);
+  box-shadow: 5px 5px 5px 0px rgba(71, 61, 138);
+}

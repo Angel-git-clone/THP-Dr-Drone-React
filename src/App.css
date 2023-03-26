@@ -49,26 +49,25 @@
     background-image: url('./assets/Background.png');
     background-size: 180vh 55vw;
   }
- }
+}
 
- @media screen and (min-width: 1481px) and (max-width: 2560px) {
+@media screen and (min-width: 1481px) and (max-width: 2560px) {
   body{
     background-image: url('./assets/BackgroundMoyenPetit.png');
     background-size: 200vh 45vw ;
   }
+}
 
-  /* *{
-    background-color: blanchedalmond;
-  } */
- }
-
- @media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   body{
     background-image: url('./assets/BackgroundMoyenPetit.png');
     background-size: 'contain';
   }
- }
+}
  
- body{
+body{
   background-color: white;
- }
+}
+*{
+  font-family: 'Panchang Variable';
+}
