@@ -4,18 +4,8 @@
 }
 .ThemeProvider{
   border-radius: 60px;
-  /* background: linear-gradient(#CD31FE, #7702C0,#280153); */
-  /* backdrop-filter: blur(4px); */
-  /* backdrop-filter: invert(80%); */
   filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.25));
   background: linear-gradient(180deg, rgba(205, 49, 254, 0.7) 0%, rgba(119, 2, 192, 0.7) 49.99%, 
               rgba(40, 1, 83, 0.7) 100%);
-  /* border-radius: 40px; */
   margin-bottom: 1vh;
 }
-/* .ContainBlur{
-  background: rgba(255, 255, 255, 0.7);
-  background-blend-mode: soft-light;
-  backdrop-filter: blur(35px);
-  border-radius: 40px;
-} */

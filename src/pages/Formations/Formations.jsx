@@ -5,7 +5,7 @@ import Video from '../../assets/trailer-Dr-drone-def.mp4';
 import Posts from '../posts';
 
 const API_URL = 'https://backend-drdrone.herokuapp.com/api/posts';
-// const API_URL = 'http://127.0.0.1:3000/api/posts';
+// const API_URL = 'http://127.0.0.1:3000/api/posts'; //run in local
 
 async function getAPIData() {
   return axios.get(API_URL, {
@@ -20,23 +20,23 @@ export default function Formations() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    // let mounted = true;
     getAPIData().then((items) => {
-      // if (mounted) {
       setPosts(items);
-      // console.log(items);
-      // }
     });
-    // return () => { (mounted = false); };
   }, []);
 
   return (
     <div>
       <div>
-        <div className='Summary'>
-          <h2>Title</h2>
-          <p>description</p>
-        </div>
+        <details open>
+          <summary>Nos formations</summary>
+          <ul>
+            <li><a href="#1"> Démousser un toit </a></li>
+            <li><a href="#2"> Nid de frelon </a></li>
+            <li><a href="#3"> Chiffrer une toiture </a></li>
+            <li><a href="#4"> Déclarer un chantier </a></li>
+          </ul>
+        </details>
         <video
           autoPlay
           loop
@@ -51,8 +51,8 @@ export default function Formations() {
 
       <div>
         <p>La liste des formations: </p>
+        <Posts posts={posts} />
       </div>
-      <Posts posts={posts} />
     </div>
   );
 }

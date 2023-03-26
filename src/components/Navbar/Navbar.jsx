@@ -8,12 +8,11 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
-// Import ++ 
+// import Avatar from '@mui/material/Avatar';
+// import AdbIcon from '@mui/icons-material/Adb';
+// Import ++
 import background from '../../assets/background-drdrone.jpeg';
 import LogoDrdrone from '../../assets/logotype-1024x1016.png';
 import './Navbar.css';
@@ -22,9 +21,7 @@ import { Link } from 'react-router-dom';
 // Pages
 import Home from '../../pages/Homepage/Homepage';
 import Formations from '../../pages/Formations/Formations';
-import Contact from '../../pages/Contact';
 
-const pages = ['Nos formations', 'Nous contacter'];
 const settings = ['Mon Profil', 'Dashboard', 'Se déconnecter'];
 
 function ResponsiveAppBar() {
@@ -48,15 +45,15 @@ function ResponsiveAppBar() {
 
   return (
     <AppBar
-      className='Navbar'
+      className="Navbar"
       sx={{
         backgroundImage: `url(${background})`,
       }}
       position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Link to={Home}>
-            <img src={LogoDrdrone} alt="logo enseigne" className="LogoNavbar"/>
+          <Link to="/" src={Home}>
+            <img src={LogoDrdrone} alt="logo enseigne" className="LogoNavbar" />
           </Link>
           <Typography
             variant="h6"
@@ -73,11 +70,11 @@ function ResponsiveAppBar() {
               textDecoration: 'none',
             }}
           >
-            Dr Drone
+            Dr.Drone
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-            {/* <IconButton
+            <IconButton
               size="large"
               aria-label="account of current user"
               aria-controls="menu-appbar"
@@ -104,30 +101,26 @@ function ResponsiveAppBar() {
               sx={{
                 display: { xs: 'block', md: 'none' },
               }}
-            > */}
-              {/* {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))} */}
-            {/* </Menu> */}
+            >
+              <MenuItem>
+                <Link to="/formations" src={Formations}>
+                  <div style={{ color: '#7702c0b3', margin: 2, padding: 2 }}>Nos formations</div>
+                </Link>
+              </MenuItem>
+              <MenuItem>
+                <Link to="https://drdrone.fr/contact/">
+                  <div style={{ color: '#7702c0b3', margin: 2, padding: 2 }}>Nous contacter</div>
+                </Link>
+              </MenuItem>
+            </Menu>
           </Box>
-          <Link to='/Formations' src={Formations}>
-            <p style={{color: 'white', marginRight: 10, marginBottom: 11}}>Nos formations</p>
-          </Link>
-          <Link to='/contact' src={Contact}>
-            <p style={{color: 'white', marginRight: 10, marginBottom: 11}}>Nous contacter</p>
-          </Link>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {/* {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 3, color: 'white', display: 'block' }}
-              >
-                {page}
-              </Button>
-            ))} */}
+            <Link to="/formations" src={Formations}>
+              <div style={{ color: 'white', marginRight: 10 }}>Nos formations</div>
+            </Link>
+            <Link to="https://drdrone.fr/contact/">
+              <div style={{ color: 'white', marginRight: 10 }}>Nous contacter</div>
+            </Link>
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
@@ -165,4 +158,3 @@ function ResponsiveAppBar() {
   );
 }
 export default ResponsiveAppBar;
-
