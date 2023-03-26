@@ -4,8 +4,8 @@ import axios from 'axios';
 import Video from '../../assets/trailer-Dr-drone-def.mp4';
 import Posts from '../Posts/posts';
 
-// const API_URL = 'https://backend-drdrone.herokuapp.com/api/posts';
-const API_URL = 'http://127.0.0.1:3000/api/posts'; //run in local
+const API_URL = 'https://backend-drdrone.herokuapp.com/api/posts';
+// const API_URL = 'http://127.0.0.1:3000/api/posts'; //run in local
 
 async function getAPIData() {
   return axios.get(API_URL, {
