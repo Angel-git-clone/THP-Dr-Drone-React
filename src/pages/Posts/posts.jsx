@@ -9,7 +9,7 @@ function Posts(props) {
           <div style={{ maxHeight: '7em' }}>
             <p style={{ color: 'white', fontWeight: 'bold' }}>{post.title}</p>
             <p>{post.content}</p>
-            <p>Il appartient à la catégorie numéro <strong style={{ color: 'white' }}>{post.category_id}</strong></p>
+            <p>Il appartient à la catégorie numéro <strong style={{ color: 'white' }}> {post.category_id}</strong></p>
           </div>
         </div>
       ))}
