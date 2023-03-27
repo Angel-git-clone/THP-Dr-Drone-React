@@ -1,6 +1,64 @@
 video{
-  margin: 5vh;
+  padding: 1em;
 }
 p{
   color: deeppink;
+}
+li > a{
+  font-weight: 'bold';
+}
+.Presentation{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.Summary{
+  grid-area: 1 ;
+  margin: 1em ;
+  padding: 4em;
+}
+
+/* Grille */
+.wrapper1 {
+  display: grid;
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-rows: repeat(1, 1fr);
+  background: url('../../assets/background-drdrone.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 3em;
+}
+.wrapper2 {
+  display: grid;
+  grid-auto-rows: minmax(100px, auto);
+  grid-column: 1;
+  grid-row: 2;
+}
+.TitlePost{
+  grid-column: 1;
+  margin-top: 1.5em;
+  grid-row: 1;
+}
+.TitleCategories{
+  max-height: 3em;
+  grid-column: 1;
+  text-align: center;
+  margin-top: 1.5em;
+  grid-row: 1;
+}
+.CategoryPost{
+  grid-column: 2;
+  grid-row: 1;
+  text-align: center;
+}
+.CategoryPostGroup{
+  grid-column: 2;
+  grid-row: 2;
+  margin: 1.5em;
+}
+.Posts{
+  grid-column: 2;
+  grid-row: 1;
 }
