@@ -5,14 +5,14 @@ import './Homepage.css';
 
 export default function homepage() {
   return (
-    <Grid container columns={2}>
-      <Grid item xs={1} className="TextLeft">
+    <Grid container className="Container">
+      <Grid item className="TextLeft">
         <div>
-          <h1>Dr. Drone :</h1>
-          <h3>" Merci de faire partie de l’équipe ! "</h3>
+          <h1 style={{ fontSize: '25px' }}>Dr. Drone :</h1>
+          <h3 style={{ fontSize: '15px' }}>" Merci de faire partie de l’équipe ! "</h3>
         </div>
       </Grid>
-      <Grid item xs={1}>
+      <Grid item className="Form">
         <AuthenForm />
       </Grid>
     </Grid>

@@ -26,10 +26,10 @@ export default function Formations() {
   }, []);
 
   return (
-    <div style={{ marginBottom: '4em' }}>
+    <div className="body">
       <div className="Presentation">
         <details open className="Summary">
-          <summary style={{ color: 'deeppink', fontWeight: 'bold' }}>Nos formations</summary>
+          <summary style={{ fontWeight: 'bold' }}><strong>Nos formations</strong></summary>
           <ul>
             <li><a href="#1"> Démousser un toit </a></li>
             <li><a href="#2"> Nid de frelon </a></li>
@@ -44,23 +44,24 @@ export default function Formations() {
           width="540"
           height="100%"
           id="video"
+          className="video"
         >
           <source src={Video} type="video/mp4" />
         </video>
       </div>
       <h3 style={{ color: 'black', textAlign: 'center' }}>
-        <stong style={{ color: 'deeppink' }}>Notre priorité : </stong>
+        <strong>Notre priorité : </strong>
         Exercer avec le plus grand respect des normes de sécurité !
       </h3>
-      <div className="wrapper1" style={{ marginTop: '2em', marginBottom: '2em' }}>
+      <div className="wrapper1">
         <div className="wrapper2">
-          <strong className="TitlePost">La liste des formations : </strong>
+          <strong className="TitlePost" style={{ color: 'white' }}>La liste des formations : </strong>
           <div className="Posts">
             <Posts posts={posts} />
           </div>
         </div>
         <div className="CategoryPostGroup">
-          <strong>La liste des catégories : </strong>
+          <strong style={{ color: 'white' }}>La liste des catégories : </strong>
           <p className="CategoryPost">
             Catégorie 1 : "Technique"
           </p>
