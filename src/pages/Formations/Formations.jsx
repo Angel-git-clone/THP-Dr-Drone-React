@@ -4,8 +4,8 @@ import axios from 'axios';
 import Video from '../../assets/trailer-Dr-drone-def.mp4';
 import Posts from '../Posts/posts';
 
-const API_URL = 'https://backend-drdrone.herokuapp.com/api/posts';
-// const API_URL = 'http://127.0.0.1:3000/api/posts'; //run in local
+// const API_URL = 'https://backend-drdrone.herokuapp.com/api/posts';
+const API_URL = 'http://127.0.0.1:3000/api/posts'; //run in local
 
 async function getAPIData() {
   return axios.get(API_URL, {
@@ -26,7 +26,7 @@ export default function Formations() {
   }, []);
 
   return (
-    <div style={{ marginBottom: '4em' }}>
+    <div className='body' style={{ marginBottom: '4em' }}>
       <div className="Presentation">
         <details open className="Summary">
           <summary style={{ color: 'deeppink', fontWeight: 'bold' }}>Nos formations</summary>
@@ -44,6 +44,7 @@ export default function Formations() {
           width="540"
           height="100%"
           id="video"
+          className="video"
         >
           <source src={Video} type="video/mp4" />
         </video>

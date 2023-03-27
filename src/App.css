@@ -40,10 +40,7 @@
   *{
     font-family: 'Panchang Variable';
     max-width: 180vh;
-    max-height: 80vw;
-    z-index: 1000;
-    /* background-color: aquamarine; */
-  
+    /* max-height: 80vw; */
   }
   body{
     background-image: url('./assets/Background.png');

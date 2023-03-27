@@ -3,5 +3,46 @@
   text-align: start;
   flex-wrap:wrap;
   justify-content: center;
-  align-content: center; 
+  align-content: center;
+}
+
+/* Mobile */
+@media screen and (max-width: 425px){
+  .Container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    background-color: white;
+    background-size: cover;
+  }
+  .TextLeft{
+    /* grid-area: 1; */
+    grid-row: 1;
+    
+  }
+  .Form{
+    grid-area: 2;
+  }
+}
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  .Container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    background-color: white;
+    background-size: cover;
+  }
+  .TextLeft{
+    /* grid-area: 1; */
+    grid-row: 1;
+    
+  }
+  .Form{
+    grid-area: 2;
+  }
 }
