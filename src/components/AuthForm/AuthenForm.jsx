@@ -82,6 +82,7 @@ export default function SignUp() {
                 variant="contained"
                 sx={{ mt: 3, mb: 3 }}
                 color="secondary"
+                className="button"
               >
                 Connexion
               </Button>

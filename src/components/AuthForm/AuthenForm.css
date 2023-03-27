@@ -9,3 +9,16 @@
               rgba(40, 1, 83, 0.7) 100%);
   margin-bottom: 1vh;
 }
+@media screen and (max-width: 425px) {
+  .ThemeProvider{
+    padding: 1em;
+  }
+  .LogoFormDrDrone{
+    width: 120px;
+    height: 120px;
+    padding: 1em;
+  }
+  .button{
+    margin: 5em;
+  }
+}
